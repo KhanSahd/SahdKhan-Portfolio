@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #98C1D9;
+}
+
 html {
     color: black;
     font-size: 16px;
@@ -5,10 +13,69 @@ html {
 
 a, li, p, h1, h2, h3, 
 h4, h5, h6 {
-    color: black;
+   
+    font-family: 'Shrikhand', cursive;
 }
 
-.grid {
-    display: grid;
-    grid-template: repeat(4, 1fr);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EE6C4D;
+    padding: 1.3rem;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
+
+.name {
+    font-size: 2rem;
+    color: #03CEA4;
+}
+
+.name:hover {
+    letter-spacing: 1rem;
+    text-align: center;
+    transition: color 1s ease-in;
+    transition: letter-spacing 2s ease-in;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav p {
+    margin-right: 2rem;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E0FBFC;
+    width: 100%;
+}
+
+#intro p {
+    padding-left: 20%;
+}
+
+.intro-item {
+    width: 30%;
+    height: auto;
+}
+
+#projects {
+    padding: 5%;
+    font-size: 1.3rem;
+}
+
+.site-pic {
+    width: 50%;
+}
+
+#PSA-list {
+    display: none;
+}
+
