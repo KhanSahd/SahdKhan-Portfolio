@@ -1,0 +1,14 @@
+html {
+    color: black;
+    font-size: 16px;
+}
+
+a, li, p, h1, h2, h3, 
+h4, h5, h6 {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(4, 1fr);
+}
