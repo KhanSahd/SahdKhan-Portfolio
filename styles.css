@@ -181,3 +181,28 @@ footer {
     margin-right: 2rem;
     margin-top: 2rem;
 }
+
+@media (max-width: 900px){
+    #intro {
+        flex-direction: column-reverse;
+        align-content: center;
+        padding-bottom: 5%;
+    }
+
+    #intro p {
+        margin-left: 0;
+    }
+
+    .myPic {
+        width: 70%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+}
