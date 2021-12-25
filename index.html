@@ -17,62 +17,89 @@
         <div class="top">
             <header>
                 <div class="contact">
-                    <p>Contact</p>
+                    <p><a href="#contact">Contact</a></p>
                 </div>
                 <div class="nav">
-                    <p>About Me</p>
-                    <p>Projects</p>
-                    <p>Skills</p>
+                    <p><a href="#about">About Me</a></p>
+                    <p><a href="#projects">Projects</a></p>
+                    <p><a href="#skills">Skills</a></p>
                 </div>
             </header>
             <div class="logo">
                 <h1>Sahd Khan</h1>
-                <h3>Student at Sacramento State studying computer science. Looking to further develop my skills and experience for a career as a front-end developer.</h3>
+                <h3>Front End Developer | Senior at Sacramento State University</h3>
             </div>
         </div>
         <div id="about">
             <h2>About Me</h2>
                 <div id="intro">
-                    <p class="intro-item">
-                        Hello my name is Sahd Khan, first generation Pakistani student studying computer science at California State University Sacramento. I love learning and developing
-                        new skills. My goal is to become a full time front-end developer and continuing my path in becoming an efficient programmer and problem-solver.   
-                    </p>
-                    <img class="intro-item myPic" src="./pics/me (sample).jpg">
+                    <div class="intro-item">
+                        <p class="intro-item">
+                            Hello my name is Sahd Khan, first generation Pakistani student studying computer science at California State University Sacramento. I love learning and developing
+                            new skills. My goal is to become a full time front-end developer and continuing my path in becoming an efficient programmer and problem-solver.   
+                        </p>    
+                    </div>
+                    <img class="intro-item myPic" src="./pics/me.JPG">
                 </div>
         </div>
         <div id="projects">
+            <h2>Projects</h2>
             <ul>
                 <li>
                     <p id="PSA">Pakistani Student Association - Sacramento State University Club</p>
-                    <ul id='PSA-list'>
-                        <li>Developed using HTML and CSS</li>
-                        <li>November 18, 2021</li>
-                        <li id='psa-pic'><img class="site-pic" src="./pics/psa.PNG"></li>
+                    <ul id='psainnerList'>
+                        <li>Click the photo to be directed to the website</li>
+                        <li id='psa-pic'><a href="https://khansahd.github.io/Pakistani-Student-Association-CodeCademy/" target= "_blank"><img class="site-pic" src="./pics/psa.PNG"></a></li>
+                        <li>For the odin project, I had to create a website for a club or local business. I decided to make a 
+                            mock club page for the Pakistani Student Association (PSA) at Sac State.
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <ul class="innerList">
-                        <li></li>
-                        <li></li>
-                        <li><img class="site-pic"></li>
+                    <p id="PFL">Prime Football League</p>
+                    <ul id="pflinnerList">
+                        <li>Click the photo to be directed to the website</li>
+                        <li><a href="https://khansahd.github.io/pfl-official-site/" target="_blank"><img class="site-pic" src="./pics/pfl.png"></a></li>
+                        <li>A local football league has a goal of becoming bigger so I thought it'd be a good 
+                            idea to develop a website for the league.
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <ul class="innerList">
-                        <li></li>
-                        <li></li>
-                        <li><img class="site-pic"></li>
+                    <p id="odin">Odin Project Landing Page</p>
+                    <ul id="odininnerList">
+                        <li>Click the photo to be directed to the website</li>
+                        <li><a href="https://khansahd.github.io/Odin-Project-Landing-Page/" target="_blank"><img class="site-pic" src="./pics/odin.png"></a></li>
+                        <li>A simple landing page for the odin project</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div id="skills">
-    
+            <h2>Skills</h2>
+            <div class="langs">
+                <img class="lang" src="./pics/languages/html5.png">
+                <img class="lang" src="./pics/languages/css.png">
+                <img class="lang" src="./pics/languages/javascript.png">
+                <img class="lang" src="./pics/languages/java.png">
+                <img class="lang" src="./pics/languages/git.png">
+                <img class="lang" src="./pics/languages/github.png">
+            </div>
         </div>
-        <footer>
-    
+        <footer id="contact">
+            <h2>Contact Info</h2>
+            <div class="contact-info">
+                <div class="card">
+                    <p>Phone Number</p>
+                    <p>(209)696-5182</p>
+                </div>
+                <div class="card">
+                    <p>Email</p>
+                    <p>03Sahd@gmail.com</p>
+                </div>
+            </div>
         </footer>
-
+        
         <script src="./script.js"></script>
 </body>
 </html>

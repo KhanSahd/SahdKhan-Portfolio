@@ -17,6 +17,18 @@ h4, h5, h6 {
     font-family: 'Shrikhand', cursive;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    transform: translateY(-5px);
+    text-shadow: lightgrey 1px 0 10px;
+}
+
 .top {
     background-image: url(./pics/pexels-anni-roenkae-3219951.jpg);
 }
@@ -56,15 +68,6 @@ header {
     font-size: 2rem;
 }
 
-.contact:hover {
-    transition: color 1s ease-in;
-    cursor: pointer;
-    transform: translateX(20px);
-    color: #f48c06;
-    letter-spacing: .5rem;
-    transition: color 1s ease-in, transform 1s ease-in, letter-spacing 2s ease-in;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -98,7 +101,7 @@ header {
 }
 
 .intro-item {
-    width: 30%;
+    width: 70%;
     height: auto;
 }
 
@@ -110,7 +113,7 @@ header {
 #projects {
     padding: 5%;
     font-size: 1.3rem;
-    background-color: #C1BDB3;
+    background-color: #353535;
     
 }
 
@@ -118,16 +121,63 @@ header {
     width: 50%;
 }
 
-#PSA:hover {
-    color: ;
+#PSA:hover, #PFL:hover, #odin:hover {
+    color: red;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
-#PSA-list {
+#psainnerList, #pflinnerList, #odininnerList {
     display: none;
-    transition: all 2s ease-in;
+    transition: display 6s ease-in-out;
 }
 
 #psa-pic {
     list-style: none;
 }
 
+#skills {
+    text-align: center;
+    background-color: #353535;
+    background-position: bottom;
+    padding: 2%;
+}
+
+.langs {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 1rem;
+}
+
+.lang {
+    width: 5%;
+    height: auto;
+}
+.lang:hover {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-image: url('./pics/pexels-anni-roenkae-3219951.jpg');
+    background-position: bottom;
+    padding: 2%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: start;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
