@@ -7,7 +7,7 @@ body {
 }
 
 html {
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
@@ -17,23 +17,46 @@ h4, h5, h6 {
     font-family: 'Shrikhand', cursive;
 }
 
+.top {
+    background-image: url(./pics/pexels-anni-roenkae-3219951.jpg);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    color: white;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 6rem;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logo h3 {
+    width: 50%;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto';
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3D3B3C;
     padding: 1.3rem;
-    border-bottom: 1px solid black;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
-.name {
+.contact {
     font-size: 2rem;
-    color: #C1BDB3;
 }
 
-.name:hover {
+.contact:hover {
     transition: color 1s ease-in;
     cursor: pointer;
     transform: translateX(20px);
@@ -51,29 +74,37 @@ header {
     margin-right: 2rem;
 }
 
+#about {
+    background-color: #323031;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #intro {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #323031;
     width: 100%;
     border-bottom: 1px black solid;
 }
 
 #intro p {
     margin-left: 20%;
-    box-sizing: border-box;
-    background-color: #C1BDB3;
-}
-
-.myPic {
-    padding: 2rem;
-    
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .intro-item {
     width: 30%;
     height: auto;
+}
+
+.myPic {
+    padding: 2rem;
+    width: 20%;
 }
 
 #projects {
