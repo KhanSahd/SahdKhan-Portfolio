@@ -7,7 +7,4 @@ psa.addEventListener('click', function() {
     } else {
         psaList.style.display = 'none';
     }
-    psaList.style.transition = 'all 2s ease-in';
 });
-
-alert('Hello Pimp')
