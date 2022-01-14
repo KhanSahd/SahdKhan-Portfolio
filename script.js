@@ -28,3 +28,20 @@ odin.addEventListener('click', function(){
         odinList.style.display = 'none';
     }
 });
+
+const contact = document.getElementById('contact-button');
+const menu = document.getElementById('contact-card');
+const closeButton = document.getElementById('close-button');
+
+contact.addEventListener('click', () => {
+    menu.style.transform = 'translateX(500px)';
+    menu.style.transition = 'all 1s ease-in-out';
+    contact.style.transform = 'translateX(300px)';
+    contact.style.transition = 'transform 1s ease-in-out';
+});
+
+closeButton.addEventListener('click', () => {
+    menu.style.transform = 'translateX(0)';
+    contact.style.transform = 'translateX(0)';
+});
+
