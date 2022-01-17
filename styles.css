@@ -14,12 +14,17 @@ html {
 a, li, p, h1, h2, h3, 
 h4, h5, h6 {
    
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 a {
     text-decoration: none;
     color: white;
+    
 }
 
 a:hover, #close-button:hover, #contact-button:hover {
@@ -118,13 +123,18 @@ header {
     
 }
 
+#projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .site-pic {
     width: 50%;
 }
 
 #PSA:hover, #PFL:hover, #odin:hover {
     color: red;
-    transition: all 1s ease-in-out;
+    transition: all 500ms ease-in-out;
     cursor: pointer;
     transform: translateY(-5px);
 }
@@ -141,37 +151,39 @@ header {
 #skills {
     text-align: center;
     background-color: #353535;
-    background-position: bottom;
     padding: 2%;
+}
+
+#languages {
+    width: 45%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    letter-spacing: 2px;
 }
 
 .langs {
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
-    margin: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .lang {
-    width: 5%;
-    height: auto;
+    width: 25%;
+    height: 10%;
 }
 .lang:hover {
-    transition: all 1s ease-in-out;
+    transition: all 300ms ease-in-out;
     cursor: pointer;
     transform: translateY(-5px);
 }
 
 footer {
-    background-image: url('./pics/pexels-anni-roenkae-3219951.jpg');
+    background-color: #323031;
     background-position: bottom;
     padding: 2%;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: start;
-    
+    text-align: center;
 }
 
 .card {
@@ -179,7 +191,6 @@ footer {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin-right: 2rem;
     margin-top: 2rem;
 }
 
@@ -188,7 +199,8 @@ footer {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 2%;
-    background-image: url('./pics/contact-menu.jpg');
+    /* background-image: url('./pics/contact-menu.jpg'); */
+    background-color: #921a1a;
     background-position: center;
     background-size: cover;
     left: -500px;
@@ -200,6 +212,34 @@ footer {
 #close-button {
     text-align: right;
     padding: 2%;
+}
+
+#skills-box {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#strengths {
+    width: 45%;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+#strength {
+    display: flex-column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%
+}
+
+#strength h5 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Roboto';
+}
+
+#strength h5::before {
+    content: '-';
 }
 
 
