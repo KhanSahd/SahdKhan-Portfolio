@@ -242,6 +242,9 @@ footer {
     content: '-';
 }
 
+#mobile-list {
+    display: none;
+}
 
 @media (max-width: 900px){
     #intro {
@@ -264,6 +267,33 @@ footer {
 
     .contact-info {
         flex-direction: column;
+    }
+
+    header {
+        display: none;
+    }
+
+    #hamburger {
+        padding: 1%;
+    }
+
+    #burger {
+        
+    }
+
+    #mobile-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(41, 41, 41);
+        padding: 2%;
+        position: absolute;
+        left: -500px;
+    }
+
+    #mobile-list p {
+        margin: 4%;
     }
 
 }

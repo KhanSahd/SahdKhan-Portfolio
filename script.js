@@ -45,3 +45,13 @@ closeButton.addEventListener('click', () => {
     contact.style.transform = 'translateX(0)';
 });
 
+const hamburger = document.getElementById('hamburger');
+const list = document.getElementById('mobile-list');
+
+hamburger.addEventListener('click', () => {
+    list.style.transform = 'translateX(500px)';
+    list.style.transition = 'all 1s ease-in-out';
+    list.style.width = '100%';
+    list.style.position = 'relative'
+});
+
