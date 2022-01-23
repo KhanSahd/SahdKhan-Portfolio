@@ -47,11 +47,26 @@ closeButton.addEventListener('click', () => {
 
 const hamburger = document.getElementById('hamburger');
 const list = document.getElementById('mobile-list');
+const close = document.getElementById('mobile-close');
 
 hamburger.addEventListener('click', () => {
     list.style.transform = 'translateX(500px)';
-    list.style.transition = 'all 1s ease-in-out';
+    list.style.transition = 'all 2s ease-in-out';
     list.style.width = '100%';
-    list.style.position = 'relative'
+    list.style.position = 'relative';
+    hamburger.style.display = 'none';
+    
 });
+
+
+
+close.addEventListener('click', () => {
+    list.style.transform = 'translateX(-500px)';
+    list.style.transition = 'all 4000ms ease-in-out';
+    list.style.width = '100%';
+    list.style.position = 'absolute';
+    hamburger.style.display = 'block';
+});
+
+
 
